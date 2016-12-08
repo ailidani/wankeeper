@@ -1,0 +1,15 @@
+tickTime=2000
+initLimit=10
+syncLimit=5
+admin.serverPort=8003
+dataDir=./data
+clientPort=2183
+server.1=127.0.0.1:2881:3881
+server.2=127.0.0.1:2882:3882
+server.3=127.0.0.1:2883:3883
+
+cid=1
+master=true
+master.address=127.0.0.1
+master.port=1735
+leasetype=2
