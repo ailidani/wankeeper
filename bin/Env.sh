@@ -98,7 +98,7 @@ if ls "${ZOOKEEPER_PREFIX}"/share/zookeeper/zookeeper-*.jar > /dev/null 2>&1; th
   LIBPATH=("${ZOOKEEPER_PREFIX}"/share/zookeeper/*.jar)
 else
   #release tarball format
-  for i in "$ZOOBINDIR"/../zookeeper-*.jar
+  for i in "$ZOOBINDIR"/../wankeeper*.jar
   do
     CLASSPATH="$i:$CLASSPATH"
   done
@@ -129,7 +129,7 @@ then
     CLASSPATH=`cygpath -wp "$CLASSPATH"`
 fi
 
-#echo "CLASSPATH=$CLASSPATH"
+echo "CLASSPATH=$CLASSPATH"
 
 # default heap for zookeeper server
 ZK_SERVER_HEAP="${ZK_SERVER_HEAP:-1000}"
